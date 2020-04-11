@@ -82,21 +82,21 @@ public class MainActivity extends AppCompatActivity {
             double price = Double.parseDouble(result.getString(2));
             balance += price;
             TableRow t = new TableRow(this);
-            TableRow.LayoutParams cl = new TableRow.LayoutParams();
-            cl.weight = 1;
+            TableRow.LayoutParams lp = new TableRow.LayoutParams();
+            lp.weight = 1;
 
-            TextView D = new TextView(this);
-            D.setLayoutParams(cl);
-            D.setText(result.getString(1));
-            t.addView(D);
+            TextView Date = new TextView(this);
+            Date.setLayoutParams(lp);
+            Date.setText(result.getString(1));
+            t.addView(Date);
 
             TextView amount = new TextView(this);
-            amount.setLayoutParams(cl);
+            amount.setLayoutParams(lp);
             amount.setText(result.getString(2));
             t.addView(amount);
 
             TextView categroy = new TextView(this);
-            categroy.setLayoutParams(cl);
+            categroy.setLayoutParams(lp);
             categroy.setText(result.getString(3));
             t.addView(categroy);
 
